@@ -8,7 +8,7 @@ library(shinydashboard)
 source('carrega_dataset.R')
 
 cabecalho <- dashboardHeader(title = "Dashboard Analítico de Reclamações de Consumidores", 
-                             titleWidth = "500")
+                             titleWidth = "600")
 
 #Lateral
 lateral <- dashboardSidebar(sidebarMenu(uiOutput("selecao_segmento_mercado"),
