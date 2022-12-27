@@ -7,7 +7,7 @@ library(shinydashboard)
 
 source('carrega_dataset.R')
 
-cabecalho <- dashboardHeader(title = "Dashboard analítico de reclamações", 
+cabecalho <- dashboardHeader(title = "Dashboard Analítico de Reclamações de Consumidores", 
                              titleWidth = "500")
 
 #Lateral
@@ -39,7 +39,7 @@ corpo <- dashboardBody(tabItems(tabItem(tabName = "panorama_geral",
                                                    DTOutput("meio_contratacao")), width = "100%", height = "100%"))))
 
 ui <- dashboardPage(cabecalho, lateral, corpo, skin = "green", 
-                    title = "Dashboard de Consumidores")
+                    title = "Dashboard Analítico de Reclamações de Consumidores")
 
 server <- function(input, output) {
   
